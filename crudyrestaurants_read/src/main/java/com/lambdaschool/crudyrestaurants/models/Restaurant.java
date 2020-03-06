@@ -11,7 +11,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "restaurants")
-@JsonIgnoreProperties(value = {"hasvalueforseatcapacity"})
+@JsonIgnoreProperties(value = {"hasvalueforseatcapacity"}) //note that hasvalueforseatcapacity doesn't mean any thing in back end application , it is just be used by frontend app to distinguish null or not by sending it as json field
 public class Restaurant
 {
     /**
